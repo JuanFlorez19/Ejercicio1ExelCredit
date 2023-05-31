@@ -8,12 +8,16 @@ public class SumaEnteros {
         String n="";
         int suma=0;
 
+        //for para guardar los numeros enteros en la variable n
+
         for (int i=0; i<string_div.length; i++) {
             if(Character.isDigit(string_div[i])) {
                 n+=string_div[i];
             }
         }
         System.out.println("1. Numeros enteros: "+n);
+
+        //for para sumar los numeros enteros
 
         for (int j=0; j<n.length(); j++ ) {
             suma += Integer.parseInt(String.valueOf(n.charAt(j)));
